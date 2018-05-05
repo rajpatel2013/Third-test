@@ -59,7 +59,7 @@ public class ReadJsonData {
 					System.out.println("ALERT : **** ALl files are empty *** ");
 				}
 			}
-		} else if (env.equalsIgnoreCase("DEVENV")) {
+		} else if (env.equalsIgnoreCase("DEV")) {
 
 			JSONArray b = (JSONArray) parser.parse(new FileReader(Constants.DEVJSON_FILEPATH));
 			for (Object b1 : b) {
@@ -71,7 +71,7 @@ public class ReadJsonData {
 				}
 			}
 
-		} else if (env.equalsIgnoreCase("TESTENV")) {
+		} else if (env.equalsIgnoreCase("TEST")) {
 
 			JSONArray f = (JSONArray) parser.parse(new FileReader(Constants.TESTJSON_FILEPATH));
 			for (Object g : f) {
