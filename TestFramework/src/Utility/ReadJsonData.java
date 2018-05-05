@@ -22,8 +22,8 @@ public class ReadJsonData {
 	public static void getDataFromJsonFileForCommonTestEnv(String env)
 			throws org.json.simple.parser.ParseException, JSONException, FileNotFoundException, IOException {
 
-		Enviornment = Configpropertyload.loadPropertyFile();
-		Enviornment = env;
+//		Enviornment = Configpropertyload.loadPropertyFile();
+//		Enviornment = env;
 
 		JSONParser parser = new JSONParser();
 
