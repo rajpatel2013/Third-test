@@ -66,6 +66,7 @@ public class ReadJsonData {
 				JSONObject person4 = (JSONObject) b1;
 				Dev_name = (String) person4.get("SKU");
 				System.out.println(Dev_name);
+				System.out.println(env);				
 				if (Dev_name.isEmpty()) {
 					System.out.println("Dev file has name is empty");
 				}
