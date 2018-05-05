@@ -2,7 +2,7 @@ package Utility;
 
 public class Constants {
 	
-	//filepath
+	////filepath
 	
 	public static final String CONFIG_FILEPATH ="/Users/rajankumarpatel/Documents/workspace/TestFramework/Configurations/config.properties";
 	public static final String ENV_FILEPATH ="/Users/rajankumarpatel/Documents/workspace/TestFramework/Configurations/Enviornment.properties";
