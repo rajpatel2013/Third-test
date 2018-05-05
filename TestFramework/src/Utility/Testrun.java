@@ -10,7 +10,7 @@ public class Testrun {
 
 	public static void main(String[] args) throws FileNotFoundException, ParseException, JSONException, IOException {
 		
-		ReadJsonData.getDataFromJsonFileForCommonTestEnv("SKU", "COMMONENV");
+		ReadJsonData.getDataFromJsonFileForCommonTestEnv("COMMONENV");
 		
 		
            }

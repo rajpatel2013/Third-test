@@ -19,7 +19,7 @@ public class ReadJsonData {
 	public static String key;
 	public static String Env;
 
-	public static void getDataFromJsonFileForCommonTestEnv(String key, String env)
+	public static void getDataFromJsonFileForCommonTestEnv(String env)
 			throws org.json.simple.parser.ParseException, JSONException, FileNotFoundException, IOException {
 
 		Enviornment = Configpropertyload.loadPropertyFile();
@@ -27,7 +27,7 @@ public class ReadJsonData {
 
 		JSONParser parser = new JSONParser();
 
-		if (key.equalsIgnoreCase("SKU") && env.equalsIgnoreCase("COMMONENV")) {
+		if (env.equalsIgnoreCase("COMMONENV")) {
 
 			JSONArray a = (JSONArray) parser.parse(new FileReader(Constants.COMMONJSON_FILEPATH));
 
@@ -59,7 +59,7 @@ public class ReadJsonData {
 					System.out.println("ALERT : **** ALl files are empty *** ");
 				}
 			}
-		} else if (key.equalsIgnoreCase("SKU") && env.equalsIgnoreCase("DEVENV")) {
+		} else if (env.equalsIgnoreCase("DEVENV")) {
 
 			JSONArray b = (JSONArray) parser.parse(new FileReader(Constants.DEVJSON_FILEPATH));
 			for (Object b1 : b) {
@@ -71,7 +71,7 @@ public class ReadJsonData {
 				}
 			}
 
-		} else if (key.equalsIgnoreCase("SKU") && env.equalsIgnoreCase("TESTENV")) {
+		} else if (env.equalsIgnoreCase("TESTENV")) {
 
 			JSONArray f = (JSONArray) parser.parse(new FileReader(Constants.TESTJSON_FILEPATH));
 			for (Object g : f) {
